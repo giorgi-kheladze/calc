@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="display" readonly>
+
+    <div class="calculator">
+        <div class="calc-row">
+            <button class="calc" conclick="clearDisplay()">C</button>
+            <button class="calc" conclick="appentToDisplay('/')">&divide;</button>
+            <button class="calc" conclick="appentToDisplay('*')">&times;</button>
+            <button class="calc" conclick="backspace()">&larr;</button>
+        </div>
+
+        <div class="calc-row">
+            <button onclick="appentToDisplay('7')">7</button>
+            <button onclick="appentToDisplay('8')">8</button>
+            <button onclick="appentToDisplay('9')">9</button>
+            <button class="calc" onclick="appentToDisplay('-')">-</button>
+        </div>
+
+        <div class="calc-row">
+            <button onclick="appentToDisplay('4')">4</button>
+            <button onclick="appentToDisplay('5')">5</button>
+            <button onclick="appentToDisplay('6')">6</button>
+            <button class="calc" onclick="appentToDisplay('+')">+</button>
+        </div>
+
+        <div class="calc-row">
+            <button onclick="appentToDisplay('1')">1</button>
+            <button onclick="appentToDisplay('2')">2</button>
+            <button onclick="appentToDisplay('3')">3</button>
+            <button class="calc" onclick="calculate()">=</button>
+        </div>
+        <!--
+        <div class="calc-row">
+            <button onclick="calcPercent()">%</button>
+            <button onclick="appentToDisplay('0')">0</button>
+            <button onclick="appentToDisplay('.')">.</button>
+            <button onclick="clearDisplay()">C</button>
+        </div>
+        -->
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
